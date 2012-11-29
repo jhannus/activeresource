@@ -26,18 +26,18 @@ require 'active_model'
 require 'active_resource/exceptions'
 require 'active_resource/version'
 
-module ActiveResource
-  extend ActiveSupport::Autoload
+require 'active_resource/base'
+require 'active_resource/callbacks'
+require 'active_resource/connection'
+require 'active_resource/custom_methods'
+require 'active_resource/formats'
+require 'active_resource/http_mock'
+require 'active_resource/observing'
+require 'active_resource/schema'
+require 'active_resource/singleton'
+require 'active_resource/validations'
+require 'active_resource/collections'
 
-  autoload :Base
-  autoload :Callbacks
-  autoload :Connection
-  autoload :CustomMethods
-  autoload :Formats
-  autoload :HttpMock
-  autoload :Observing
-  autoload :Schema
-  autoload :Singleton
-  autoload :Validations
-  autoload :Collection
+module ActiveResource
+  
 end
